@@ -35,7 +35,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/Ritesh7766/My-Team-Page/blob/main/assets/team.png)
+![screenshot](https://github.com/Ritesh7766/Interior-Consultant/blob/main/assets/demo.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
