@@ -269,8 +269,16 @@ html, body {
     .post h3 {
         font-size: 10px;
     }
+
+    footer {
+        display: none;
+    }
 }
 
+.arw {
+    cursor: pointer;
+    padding-left: 10px;
+}
 
 footer {
     text-align: center;
