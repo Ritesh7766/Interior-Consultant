@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fafafa;
+}
+
+html, body {
+    height: 100%;
+    background-color: rgb(33, 28, 28);
+}
+
+.container {
+    height: 120%;
+    position: relative;
+}
+
+.navbar {
+    /*
+    top: 0;
+    position: sticky;
+    */
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    z-index: 1000;
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.navbar .dropdown-links a {
+    padding: 5px;
+}
+
+.navbar .logo a {
+    border: 1px solid #fafafa;
+    padding: 5px;
+    font-weight: lighter;
+}
+
+.logo a:hover {
+    background-color: #fafafa56;
+    transition-duration: 0.5s;
+}
+
+.dropdown-links a:hover {
+    border-bottom: 1px solid #fafafa;
+    transition-duration: 0.2s;
+}
+
+/*
+.center-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*/
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 1%;
+}
+
+.info-center {
+    display: flex;
+    align-items: center;
+}
+
+.info h1 {
+    margin-bottom: 15%;
+    font-size: 2.4em;
+}
+
+.info h4 {
+    margin-top: 15%;
+    margin-bottom: 5%;
+    font-size: 1.5em;
+}
+
+.info p {
+    white-space: pre-line;
+    font-size: 1.3em;
+}
+
+.interior {
+    width: 50%;
+    position: relative;
+}
+
+.interior img {
+    width: 100%;
+}
+
+.tweet {
+    width: 55%;
+    background-color: rgb(21, 18, 18);
+    position: absolute;
+    top: 85%;
+    right: 10%;
+    box-shadow: 2px 2px rgba(24, 21, 21, 0.713)
+}
+
+.profile-pic {
+    width: 15%;
+}
+
+.profile-pic img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.profile {
+    display: flex;
+}
+
+.credentials {
+    flex-grow: 1;
+}
+
+#role {
+    font-size: 11px;
+    color: #d6d4d4;
+}
+
+#name {
+    font-size: 1.4em;
+}
+
+.profile * {
+    margin: 3%;
+}
+
+.post {
+    padding: 3%;
+    padding-bottom: 8%;
+}
+
+.post h3 {
+    white-space: pre-line;
+}
+
+@media screen and (max-width: 900px) {
+    .post h3 {
+        white-space: inherit;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .navbar {
+        flex-direction: column;
+        height: 55px;
+    }
+
+    .container {
+        height: inherit;
+    }
+
+    .mobile-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dropdown-btn {
+        cursor: pointer;
+    }
+
+    .main-content {
+        margin: 5%;
+        flex-direction: column;
+    }
+
+    .interior {
+        width: 100%;
+    }
+
+    .dropdown-btn .line {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .perfect-center {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vanish {
+        transform: translateY(-650px);
+    }
+
+    .dropdown-links {
+        height: fit-content;
+    }
+
+    .dropdown-links a {
+        display: block;
+        text-align: center;
+        font-weight: 800;
+        margin-top: 25%;
+    }
+
+    .dropdown-links a:hover {
+        font-size: 1.2em;
+    }
+
+    .active-nav {
+        height: 100%;
+        transition: 1.5s all;
+    }
+
+    .active-menu {
+        transform: translateY(0px);
+        transition: 1.5s all;
+    }
+
+    .is-active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .is-active .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .is-active .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .active-pos {
+        position: absolute;
+        width: 100%;
+    }
+
+    .margin-top-rem {
+        transform: translateY(-2000px);
+        margin: 0;
+        transition: 1.5s all;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .info p {
+        white-space: initial;
+    }
+
+    .info h1 {
+        font-size: 1.7em;
+    }
+
+    .info h4 {
+        font-size: 1.5em;
+    }
+
+    .tweet {
+        width: 70%;
+    }
+
+    .post h3 {
+        font-size: 10px;
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+footer * {
+    color: rgb(181, 179, 179);
+}
